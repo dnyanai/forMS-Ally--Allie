@@ -57,7 +57,7 @@ forMS-Ally--Allie/
 
 ## 🚀 Live Demo
 
-- **Frontend**: https://for-ms-frontend-22097057568.us-west1.run.app
+- **Frontend**: [https://for-ms-frontend-a66z2lnrya-uw.a.run.app/]
 - **Backend**: https://for-ms-backend-22097057568.us-west1.run.app
 
 ## 📊 Features Demo
