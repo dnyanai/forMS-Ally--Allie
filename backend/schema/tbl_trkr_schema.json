@@ -1,0 +1,50 @@
+[
+  {
+    "name": "entry_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Unique identifier for symptom entry (format: sym_YYYYMMDDHHMMSS)"
+  },
+  {
+    "name": "entry_date",
+    "type": "DATETIME",
+    "mode": "REQUIRED",
+    "description": "When symptoms were logged"
+  },
+  {
+    "name": "mood",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Mood rating 1-10 (1=poor, 10=great)"
+  },
+  {
+    "name": "fatigue",
+    "type": "INT64",
+    "mode": "REQUIRED",
+    "description": "Fatigue level 1-10 (1=energetic, 10=exhausted)"
+  },
+  {
+    "name": "symptoms",
+    "type": "STRING",
+    "mode": "REPEATED",
+    "description": "List of symptoms: tingling, numbness, brain fog, etc."
+  },
+  {
+    "name": "medications_taken",
+    "type": "STRING",
+    "mode": "REPEATED",
+    "description": "Medications taken: Kesimpta, Vitamin D, etc."
+  },
+  {
+    "name": "period_status",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Menstrual cycle status: started, ongoing, ended, or null"
+  },
+  {
+    "name": "notes",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Free-form notes about the day"
+  }
+]

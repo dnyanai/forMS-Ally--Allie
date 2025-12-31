@@ -1,0 +1,32 @@
+[
+    {
+      "name": "embedding_id",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "Unique identifier (format: emb_YYYYMMDDHHMMSS)"
+    },
+    {
+      "name": "session_id",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "FK to tbl_conv.session_id"
+    },
+    {
+      "name": "content_type",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "What was embedded: 'user_message', 'assistant_response', 'full_turn'"
+    },
+    {
+      "name": "embedding",
+      "type": "FLOAT64",
+      "mode": "REPEATED",
+      "description": "Vector embedding array (768 or 1536 dims)"
+    },
+    {
+      "name": "created_at",
+      "type": "DATETIME",
+      "mode": "REQUIRED",
+      "description": "When embedding was generated"
+    }
+  ]

@@ -1,0 +1,7 @@
+{
+  "name": "MS Ally",
+  "description": "An AI-powered personal assistant for Multiple Sclerosis patients to track symptoms, manage fatigue, and navigate daily challenges with emotional support and data-driven insights.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

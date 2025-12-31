@@ -1,0 +1,129 @@
+/* =============================================================================
+   INDEX.CSS - Custom styles and animations for MS Ally
+   ============================================================================= */
+
+/* Import Inter font (already loaded via Google Fonts in HTML) */
+
+/* Smooth scroll for the whole app */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar (optional - makes it look cleaner) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Delay classes for staggered animations */
+.delay-75 {
+  animation-delay: 75ms;
+}
+
+.delay-150 {
+  animation-delay: 150ms;
+}
+
+/* Custom shadow for elevated elements */
+.shadow-up {
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Glass effect (used in header) */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* MS Orange brand color */
+.ms-orange {
+  color: #f97316;
+}
+
+.bg-ms-orange {
+  background-color: #f97316;
+}
+
+.text-sm a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+.text-sm a:hover {
+  color: #1d4ed8;
+}
+
+/* Pulse animation for voice indicator */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 1.5s ease-out infinite;
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #f97316;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(249, 115, 22, 0.3);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #f97316;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 6px rgba(249, 115, 22, 0.3);
+}

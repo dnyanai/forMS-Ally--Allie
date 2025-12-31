@@ -1,0 +1,44 @@
+[
+    {
+      "name": "session_id",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "Conversation session identifier"
+    },
+    {
+      "name": "entry_id",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": "FK to tbl_trkr.entry_id when symptoms were logged"
+    },
+    {
+      "name": "session_date",
+      "type": "DATETIME",
+      "mode": "REQUIRED",
+      "description": "Timestamp of message"
+    },
+    {
+      "name": "role",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "Valid values: user, assistant"
+    },
+    {
+      "name": "content",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "Message content"
+    },
+    {
+      "name": "input_type",
+      "type": "STRING",
+      "mode": "REQUIRED",
+      "description": "Valid values: text, audio"
+    },
+    {
+      "name": "intent_detected",
+      "type": "STRING",
+      "mode": "REPEATED",
+      "description": "Intents identified: log_symptom, search_info, greeting, etc."
+    }
+  ]
