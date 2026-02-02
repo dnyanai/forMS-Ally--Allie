@@ -76,7 +76,7 @@ Natural conversation with spoken responses via ElevenLabs.
 
 ## 🎥 Video Demo
 
-[Watch the 3-minute demo](YOUR_VIDEO_LINK_HERE)
+[Watch the 3-minute demo](https://vimeo.com/1150733516?fl=pl&fe=sh)
 
 ## 👩‍💻 Author
 
